@@ -1,0 +1,22 @@
+[
+  {
+    "title": "mango",
+    "description": "fresh sweet mango from nothest part of bangladesh ",
+    "price": "11",
+    "category": "Other",
+    "condition": "Brand New",
+    "location": "diu smart city",
+    "contactPreference": "email",
+    "phoneNumber": "",
+    "negotiable": "true",
+    "meetingPreference": "campus",
+    "images": [
+      "mango.jpg"
+    ],
+    "id": 1752420738951,
+    "timePosted": "just now",
+    "rating": 0,
+    "reviews": 0,
+    "originalPrice": 13.2
+  }
+]

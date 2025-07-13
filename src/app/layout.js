@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import SessionClientProvider from "./components/SessionClientProvider"; // <-- Import the client provider
+import { CartProvider } from "@/app/components/CartContext"; // <-- Import the CartProvider
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,10 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        <SessionClientProvider>
+          <CartProvider>{children}</CartProvider>
+        </SessionClientProvider>
       </body>
     </html>
   );
